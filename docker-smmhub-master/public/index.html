@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <script src="js/script.js"></script>
+  <link href="style/style.css" rel="stylesheet">
+  <title>Призыв. Анализ. Мобилизация.</title>
+</head>
+<body>
+
+<div class="container">
+
+  <div style="display: flex; justify-items: center; flex-direction: column; align-items: center">
+    <div class="image">
+      <img src="assets/fon.png" alt="" style="object-fit: contain;"/>
+    </div>
+    <h4 style="text-align: center; margin: 8px; color: white;">Проверь насколько ты годен к мобилизации</h4>
+  </div>
+
+
+  <div style="display: flex; justify-content: center;">
+    <p style="color: white;">
+      Нейронная сеть проанализирует данные и сделает вывод!
+    </p>
+  </div>
+
+  <div class="card">
+
+
+      <select id="age">
+        <option value="0">Возраст</option>
+        <option value="1">18 - 25</option>
+        <option value="2">25 - 35</option>
+        <option value="3">35 - 45</option>
+        <option value="4">45 - 50</option>
+        <option value="5">свыше 60</option>
+      </select>
+
+      <select id="job">
+        <option value="0">Отрасль компании</option>
+        <option value="0">Автомобильный бизнес</option>
+        <option value="1">Гостиницы, рестораны, общепит, кейтеринг</option>
+        <option value="2">Государственные организации</option>
+        <option value="3">Добывающая отрасль</option>
+        <option value="4">ЖКХ</option>
+        <option value="5">Информационные технологии, системная интеграция, интернет</option>
+        <option value="6">Искусство, культура</option>
+        <option value="7">Лесная промышленность, деревообработка</option>
+        <option value="8">Медицина, фармацевтика, аптеки</option>
+        <option value="9">Металлургия, металлообработка</option>
+        <option value="10">Нефть и газ</option>
+        <option value="11">Образовательные учреждения</option>
+        <option value="12">Общественная деятельность, партии, благотворительность, НКО</option>
+        <option value="13">Перевозки, логистика, склад, ВЭД</option>
+        <option value="14">Продукты питания</option>
+        <option value="15">Промышленное оборудование, техника, станки и комплектующие</option>
+        <option value="16">Розничная торговля</option>
+        <option value="17">СМИ, маркетинг, реклама, BTL, PR, дизайн, продюсирование</option>
+        <option value="18">Сельское хозяйство</option>
+        <option value="19">Строительство, недвижимость, эксплуатация, проектирование</option>
+        <option value="20">Телекоммуникации, связь</option>
+        <option value="21">Тяжелое машиностроение</option>
+        <option value="22">Управление многопрофильными активами</option>
+        <option value="23">Услуги для бизнеса</option>
+        <option value="24">Услуги для населения</option>
+        <option value="25">Финансовый сектор</option>
+        <option value="26">Химическое производство, удобрения</option>
+        <option value="27">Электроника, приборостроение, бытовая техника, компьютеры и оргтехника</option>
+        <option value="28">Энергетика</option>
+      </select>
+
+
+      <select id="rank">
+        <option value="0">Звание</option>
+        <option value="1">Солдаты, матросы, сержанты, старшины, прапорщики и мичманы</option>
+        <option value="2">Младшие офицеры</option>
+        <option value="3">Майоры, капитаны 3 ранга, подполковники, капитаны 2 ранга</option>
+        <option value="4">Полковники, капитаны 1 ранга</option>
+        <option value="5">Высшие офицеры</option>
+      </select>
+
+
+    <div style="display: flex; justify-content: start; align-items: center">
+      <input
+              id="isAcr"
+              type="checkbox"
+      />
+      <span style="margin-left: 10px">Имеет ли ваша организация государственную аккредитацию организации, осуществляющей деятельность в области информационных технологий</span>
+    </div>
+
+    <div style="display: flex; justify-content: start; align-items: center">
+      <input
+              id="isPeriod"
+              type="checkbox"
+      />
+      <span style="margin-left: 10px">Стаж работы на последнем рабочем месте более 6 месяцев</span>
+    </div>
+
+    <div style="display: flex; justify-content: start; align-items: center">
+      <input
+              id="isFamily"
+              type="checkbox"
+      />
+      <span style="margin-left: 10px">Четверо и более детей до 16 лет на иждивении</span>
+    </div>
+
+    <div id="analysisContainer" class="column justify-start no-wrap items-center">
+
+      <span class="q-mb-sm">Если у вас есть вебкамера, проведите дополнительный анализ</span>
+
+      <button id="analysis">
+        Анализ нейросетью
+      </button>
+
+    </div>
+
+
+
+    <button id="submit">
+      Отправить
+    </button>
+
+  </div>
+
+</div>
+
+
+
+</body>
+
+
+<script src="js/webgazer.js"></script>
+</html>

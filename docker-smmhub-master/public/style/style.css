@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    font-family: Calibri, serif !important;
+    font-size: 2.5em !important;
+}
+
+.container {
+    padding: 20px;
+    background: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image {
+    height: 25vh;
+    max-width: 50vw;
+    box-shadow: 0 0 150px 20px #fc0202;
+    object-fit: contain;
+    border-radius: 20px;
+    border: 5px solid white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.card {
+    gap: 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 0 60px 5px #7dbcff;
+}
+
+
+
+select {
+    font-family: Calibri, serif !important;
+    font-size: 1em;
+    border: none;
+    /*height: 38px;*/
+}
+
+span {
+    font-size: 1em;
+}
+
+button {
+    /*height: 30px;*/
+    min-width: 80px;
+    border: 1px solid #e0f6f6;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+button:hover {
+    background: #c8c8f6;
+    cursor: pointer;
+}
